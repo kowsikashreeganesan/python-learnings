@@ -1,0 +1,30 @@
+def calculate(num1, num2, operator):
+    if operator == "+":
+        print("result:",num1+num2)
+    elif operator == "-":
+        print("result:",num1-num2)
+    elif operator == "*":
+        print("result:",num1*num2)
+    elif operator == "/":
+        if num2 == 0:
+            print("result:error")
+        else:
+            print("result:",num1/num2)
+    elif operator == "%":
+        print("result:",num1%num2)
+    elif operator == "**":
+        print("result:",num1**num2)
+    elif operator == "//":
+        print("result:",num1//num2)
+    elif operator == "<":
+        print("result:",num1<num2)
+    elif operator == ">":
+        print("result:",num1>num2)
+    elif operator == "==":
+        print("result:",num1==num2)
+    else:
+        print("result:Syntax error")
+num1 = float(input("Enter first number:"))
+num2 = float(input("Enter second number:"))
+operator = input("Enter operator(+,-,*,/,<,>,==,//,%,**):")
+calculate(num1, num2, operator)
